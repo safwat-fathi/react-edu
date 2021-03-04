@@ -1,11 +1,17 @@
 import React from "react";
-// app components
-import Cars from "./Memo/Cars";
+// components
+import SVG from "./ImagesAsComponents";
 
 const App = () => {
   return (
     <>
-      <Cars />
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, nisi
+        fuga eveniet expedita nesciunt deleniti sapiente quo incidunt blanditiis
+        id nam omnis numquam ratione sint! Ducimus numquam molestias consectetur
+        accusamus!
+      </p>
+      <SVG />
     </>
   );
 };
