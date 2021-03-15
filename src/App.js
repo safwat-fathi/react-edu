@@ -1,11 +1,14 @@
 import React from "react";
 // app components
-import Cars from "./Memo/Cars";
-
+import Recursive from "./RecursiveComponents";
+// data
+import { pagesData } from "./pagesData";
 const App = () => {
   return (
     <>
-      <Cars />
+      {Object.entries(pagesData).map(([pageID, pageData]) => {
+        return <Recursive key={pageID} page={pageData} />;
+      })}
     </>
   );
 };
